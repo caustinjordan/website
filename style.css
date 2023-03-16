@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -8,8 +10,9 @@
 /* Set background and font styles */
 body {
   /* Another nice background color is #1a2b34 */
-  background-color: #F4F4F4;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #f4f4f4;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   color: #333333;
   line-height: 1.5;
@@ -22,10 +25,10 @@ body {
 
 /* Style the header and navigation */
 header {
-	background-color: #FFFFFF;
-	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-	position: relative;
-	clear: both;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  clear: both;
 }
 
 .columns-container {
@@ -37,11 +40,10 @@ header {
   margin-top: 0rem;
 }
 .container {
-  display:flex;
+  display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-
 
 .navbar {
   display: flex;
@@ -51,41 +53,38 @@ header {
   /* Add other styles for your navbar */
 }
 
-
 header h1 {
-	font-size: calc(10px + 1vw);
-	color: #333333;
-	padding-left: 25px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 25px;
-	white-space: nowrap;
+  font-size: calc(10px + 1vw);
+  color: #333333;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 25px;
+  white-space: nowrap;
 }
 
 nav ul {
-	list-style: none;
-	margin:0;
-	display: flex;
+  list-style: none;
+  margin: 0;
+  display: flex;
 }
 
-
-
-nav li:hover{
-  background-color: #A51C30;
+nav li:hover {
+  background-color: #a51c30;
 }
 
 nav a {
-	color: #808080;
-	text-decoration: none;
-	font-size: calc(10px + .65vw);
-	white-space: nowrap;
-	padding: .8rem;
-	display: block;
+  color: #808080;
+  text-decoration: none;
+  font-size: calc(10px + 0.65vw);
+  white-space: nowrap;
+  padding: 0.8rem;
+  display: block;
 }
 
 .toggle-button {
   position: absolute;
-  top: .7rem;
+  top: 0.7rem;
   right: 1rem;
   display: none;
   flex-direction: column;
@@ -99,11 +98,10 @@ nav a {
   width: 100%;
   background-color: black;
   border-radius: 10px;
-  
 }
 
 nav a:hover {
-	color: white;
+  color: white;
 }
 
 /* add this to force and give more space between right column and edge
@@ -112,7 +110,7 @@ section {
 }
 */
 
-.contact-links ul{
+.contact-links ul {
   list-style: none;
   text-align: left;
   font-size: 14px;
@@ -120,18 +118,17 @@ section {
 
 .contact-links a {
   color: #333333;
-	text-decoration: none;
-	transition: color 0.3s ease-in-out;
-	padding-right: 25px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  padding-right: 25px;
 }
 
-
 .contact-links a:hover {
-	color: #A51C30;
+  color: #a51c30;
 }
 
 li.email {
-  background-image: url('images/mail.png');
+  background-image: url("images/mail.png");
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 15px;
@@ -139,7 +136,7 @@ li.email {
 }
 
 li.linkedin {
-  background-image: url('images/linkedin.png');
+  background-image: url("images/linkedin.png");
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 15px;
@@ -147,31 +144,30 @@ li.linkedin {
 }
 
 li.twitter {
-  background-image: url('images/twitter.png');
+  background-image: url("images/twitter.png");
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 15px;
   padding-left: 20px;
 }
 
-.left-column {  
-  border: 0px solid  #ccc; 
-  padding: 1.5em; 
+.left-column {
+  border: 0px solid #ccc;
+  padding: 1.5em;
   margin: 0;
   text-align: justify;
   list-style-position: inside;
   width: 25%;
 }
 
-.right-column {  
-  border: 0px solid  #ccc; 
-  padding: 1.5em; 
+.right-column {
+  border: 0px solid #ccc;
+  padding: 1.5em;
   margin: 0;
   text-align: justify;
   list-style-position: inside;
-  max-width: 100%; 
+  max-width: 100%;
 }
-
 
 .left-column img {
   object-fit: contain;
@@ -190,20 +186,19 @@ li.twitter {
 
 /* Style the footer */
 footer {
-	background-color: #FFFFFF;
-	padding: 20px;
-	box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
-	text-align: center;
-	font-size: 14px;
-	color: #999999;
-	position: relative;
-	clear: both;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 14px;
+  color: #999999;
+  position: relative;
+  clear: both;
 }
 
 footer p {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
-
 
 .menu-icon {
   display: none;
@@ -219,10 +214,8 @@ footer p {
   position: relative;
 }
 
-
-
 .follow-btn button {
-  background-color: #A51C30;
+  background-color: #a51c30;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -232,7 +225,7 @@ footer p {
 }
 
 .follow-btn button:hover {
-  background-color: #A51C30;
+  background-color: #a51c30;
 }
 
 .dropdown-menu {
@@ -240,7 +233,7 @@ footer p {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 120px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   right: 0;
 }
@@ -258,8 +251,6 @@ footer p {
   color: #f9f9f9;
 }
 
-
-
 .dropdown-menu img {
   width: 24px;
   height: 24px;
@@ -274,66 +265,61 @@ footer p {
   text-align: left;
 }
 
-
 .follow-btn:hover .dropdown-menu {
   display: block;
 }
 
-
-
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 47.5em ) {
-
-  .columns-container { 
+@media screen and (min-width: 47.5em) {
+  .columns-container {
     float: left;
   }
 
-  .left-column { 
+  .left-column {
     width: 18.75em;
     margin-right: -19.3em;
     float: left;
   }
 
-  .right-column { 
+  .right-column {
     margin-left: 20em;
     float: left;
-  }   
-
+  }
 }
 
 @media (max-width: 800px) {
-  .toggle-button{
+  .toggle-button {
     display: flex;
   }
-  
-  .nav-items{
+
+  .nav-items {
     display: none;
     width: 100%;
   }
-  
-  .container{
+
+  .container {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .navbar ul {
     width: 100%;
     flex-direction: column;
   }
-  
+
   .nav-items li {
     text-align: center;
   }
-  
+
   .nav-items a {
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .nav-items.active {
     display: flex;
   }
-  
+
   .right-column {
     width: 100%;
     margin: 0;
@@ -342,57 +328,51 @@ footer p {
   .right-column {
     margin-left: 0;
   }
-  
-.left-column {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  background-color: #FFFFFF;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  margin-top: 10px;
-  width: 100%;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-}
 
+  .left-column {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
 
+  .left-column .profile-text {
+    font-size: 12px;
+  }
 
+  .left-column .profile-pic-wrapper {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+  }
 
-.left-column .profile-text {
-  font-size: 12px;
-}
+  .left-column .profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 0%;
+    padding-bottom: 0px;
+  }
 
+  .left-column > * {
+    margin-right: 10px;
+  }
 
-
-.left-column .profile-pic-wrapper {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  overflow: hidden;
-  display: block;
-  margin-left: 20px;
-  margin-right: 20px;
-  position: relative;
-}
-
-.left-column .profile-pic {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 0% 0%;
-  padding-bottom: 0px ;
-}
-
-.left-column > * {
-  margin-right: 10px;
-}
-
-.left-column p {
-  flex-grow: 1;
-  margin-right: 20px;
-}
-
+  .left-column p {
+    flex-grow: 1;
+    margin-right: 20px;
+  }
 
   .contact-links {
     display: none;
@@ -402,10 +382,4 @@ footer p {
     display: block;
     margin-left: auto;
   }
-  
-
 }
-
-
-
-
