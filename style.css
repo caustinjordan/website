@@ -43,7 +43,6 @@ header {
   width: 100%;
   align-items: center;
   /* Add other styles for your navbar */
-  padding-left: 30px;
 }
 
 
@@ -54,7 +53,6 @@ header h1 {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-right: 25px;
-	width: 25%;
 	white-space: nowrap;
 }
 
@@ -76,7 +74,7 @@ nav a {
 	transition: color 0.3s ease-in-out;
 	font-size: calc(10px + .8vw);
 	white-space: nowrap;
-	padding: 1rem;
+	padding: .7rem;
 	display: block;
 }
 
