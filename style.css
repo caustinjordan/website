@@ -30,6 +30,11 @@ header {
 
 .columns-container {
   flex-grow: 1;
+  /* To switch to a centered, more modern format, add these three lines below. Delete to go back to a wider but more static format */
+  width: 100%;
+  max-width: 75ch;
+  margin: 2rem auto;
+  margin-top: 0rem;
 }
 .container {
   display:flex;
@@ -101,10 +106,11 @@ nav a:hover {
 	color: white;
 }
 
-
+/* add this to force and give more space between right column and edge
 section {
 	padding-right: 40px;
 }
+*/
 
 .contact-links ul{
   list-style: none;
@@ -150,7 +156,7 @@ li.twitter {
 
 .left-column {  
   border: 0px solid  #ccc; 
-  padding: 1.25em; 
+  padding: 1.5em; 
   margin: 0;
   text-align: justify;
   list-style-position: inside;
@@ -159,11 +165,10 @@ li.twitter {
 
 .right-column {  
   border: 0px solid  #ccc; 
-  padding: 1.25em; 
+  padding: 1.5em; 
   margin: 0;
   text-align: justify;
   list-style-position: inside;
-  width: 60%;
   max-width: 100%; 
 }
 
