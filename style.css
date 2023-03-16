@@ -71,7 +71,6 @@ nav li:hover{
 nav a {
 	color: #808080;
 	text-decoration: none;
-	transition: color 0.3s ease-in-out;
 	font-size: calc(10px + .65vw);
 	white-space: nowrap;
 	padding: .8rem;
