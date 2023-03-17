@@ -36,7 +36,7 @@ header {
   flex-grow: 1;
   /* To switch to a centered, more modern format, add these three lines below. Delete to go back to a wider but more static format */
   width: 100%;
-  max-width: 75ch;
+  max-width: 80ch;
   margin: 2rem auto;
   margin-top: 0rem;
   flex-wrap: wrap;
@@ -305,7 +305,7 @@ footer p {
     display: flex;
   }
   
-.columns-container {
+  .columns-container {
     display: flex;
     flex-direction: column; /* Add this line */
     width: 100%;
@@ -375,6 +375,41 @@ footer p {
   .contact-links-mobile {
     display: block;
     margin-left: auto;
+  }
+}
+
+/* Very large screens */
+@media (min-width: 1600px) {
+  .columns-container {
+    margin-left: auto; /* Adjust margin-left as needed */
+    margin-right: auto; /* Adjust margin-right as needed */
+    max-width: 75%;
+  }
+  
+  .left-column {
+    border: 0px solid #ccc;
+    padding: 1.5em;
+    text-align: justify;
+    list-style-position: inside;
+    flex: 1 1 23%;
+  }
+  
+  .right-column {
+    border: 0px solid #ccc;
+    padding: 1.5em;
+    text-align: justify;
+    list-style-position: inside;
+    flex: 1 1 77%;
+    font-size: calc(1.2 * 16px); /* Increase font size by a factor, e.g., 1.2 for 20% larger */
+  }
+  
+    /* Set a fixed width and height for the profile image in the left column */
+  .left-column .profile-pic {
+    width: 220.883px; /* Set the width explicitly */
+    height: 306.317px; /* Set the height explicitly */
+    object-fit: cover;
+    margin-left: 0;
+    margin-right: 0;
   }
   
   
