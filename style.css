@@ -77,6 +77,7 @@ nav ul {
 
 nav li:hover {
   background-color: #a51c30;
+  transition: background-color .5s ease-out;
 }
 
 nav a {
@@ -233,13 +234,15 @@ footer p {
 }
 
 .dropdown-menu {
-  display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   right: 0;
+  top: 35px;
+  transition: all .25s ease-in;
+  opacity: 0;
 }
 
 .dropdown-menu a {
@@ -251,8 +254,9 @@ footer p {
 }
 
 .dropdown-menu a:hover {
-  background-color: #808080;
+  background-color: #a51c30;
   color: #f9f9f9;
+  transition: all ease .5s;
 }
 
 .dropdown-menu img {
@@ -271,6 +275,7 @@ footer p {
 
 .follow-btn:hover .dropdown-menu {
   display: block;
+  opacity: 1;
 }
 
 /* MEDIA QUERIES */
