@@ -283,6 +283,15 @@ footer p {
 
 
 @media (max-width: 800px) {
+  
+  .follow-btn:hover .dropdown-menu {
+}
+
+  .follow-btn:active .dropdown-menu{
+    display: block;
+    opacity: 1;
+  }
+
   header h1 {
     font-size: 14px;
   }
