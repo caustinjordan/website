@@ -276,7 +276,6 @@ footer p {
 .follow-btn:hover .dropdown-menu {
   display: block;
   opacity: 1;
-  pointer-events: none;
 }
 
 /* MEDIA QUERIES */
