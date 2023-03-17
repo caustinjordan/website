@@ -383,7 +383,7 @@ footer p {
   .columns-container {
     margin-left: auto; /* Adjust margin-left as needed */
     margin-right: auto; /* Adjust margin-right as needed */
-    max-width: 75%;
+    max-width: 1400px;
   }
   
   .left-column {
@@ -405,8 +405,7 @@ footer p {
   
     /* Set a fixed width and height for the profile image in the left column */
   .left-column .profile-pic {
-    width: 220.883px; /* Set the width explicitly */
-    height: 306.317px; /* Set the height explicitly */
+    width: 274px; /* Set the width explicitly */
     object-fit: cover;
     margin-left: 0;
     margin-right: 0;
