@@ -293,6 +293,12 @@ footer p {
     font-size: 14px;
   }
   
+  nav li:hover {
+  background-color: #a51c30;
+  border-radius: 0px;
+  transition: background-color .5s ease-out;
+  }
+
   .toggle-button {
     display: flex;
   }
