@@ -32,12 +32,14 @@ header {
 }
 
 .columns-container {
+  display: flex;
   flex-grow: 1;
   /* To switch to a centered, more modern format, add these three lines below. Delete to go back to a wider but more static format */
   width: 100%;
   max-width: 75ch;
   margin: 2rem auto;
   margin-top: 0rem;
+  flex-wrap: wrap;
 }
 .container {
   display: flex;
@@ -154,19 +156,17 @@ li.twitter {
 .left-column {
   border: 0px solid #ccc;
   padding: 1.5em;
-  margin: 0;
   text-align: justify;
   list-style-position: inside;
-  width: 25%;
+  flex: 1 1 33.3333%;
 }
 
 .right-column {
   border: 0px solid #ccc;
   padding: 1.5em;
-  margin: 0;
   text-align: justify;
   list-style-position: inside;
-  max-width: 100%;
+  flex: 1 1 66.6666%;
 }
 
 .left-column img {
@@ -271,22 +271,7 @@ footer p {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 47.5em) {
-  .columns-container {
-    float: left;
-  }
 
-  .left-column {
-    width: 18.75em;
-    margin-right: -19.3em;
-    float: left;
-  }
-
-  .right-column {
-    margin-left: 20em;
-    float: left;
-  }
-}
 
 @media (max-width: 800px) {
   .toggle-button {
@@ -319,24 +304,33 @@ footer p {
   .nav-items.active {
     display: flex;
   }
+  
+.columns-container {
+    display: flex;
+    flex-direction: column; /* Add this line */
+    width: 100%;
+    max-width: 75ch;
+    margin: 2rem auto;
+    margin-top: 0rem;
+    flex-wrap: wrap;
+  }
 
   .right-column {
     width: 100%;
     margin: 0;
-  }
-
-  .right-column {
     margin-left: 0;
   }
 
   .left-column {
     display: flex;
+    flex: 0;
     align-items: center;
     padding: 10px;
     background-color: #ffffff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
     width: 100%;
+    height: 75px;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
@@ -382,4 +376,6 @@ footer p {
     display: block;
     margin-left: auto;
   }
+  
+  
 }
