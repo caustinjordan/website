@@ -284,6 +284,20 @@ footer p {
   opacity: 1;
 }
 
+
+ul > li {
+    margin-left: 10px;
+}
+
+ul ul {
+  margin-left: 20px;
+}
+
+.publicationslist {
+  text-align: left;
+}
+
+
 /* MEDIA QUERIES */
 
 
